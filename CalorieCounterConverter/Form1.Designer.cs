@@ -1,6 +1,6 @@
 ﻿namespace CalorieCounterConverter
 {
-    partial class Form1
+    partial class fatsCarbsConverterForm
     {
         /// <summary>
         /// Required designer variable.
@@ -82,27 +82,24 @@
             this.displayCaloriesFromFats.AutoSize = true;
             this.displayCaloriesFromFats.Location = new System.Drawing.Point(6, 16);
             this.displayCaloriesFromFats.Name = "displayCaloriesFromFats";
-            this.displayCaloriesFromFats.Size = new System.Drawing.Size(35, 13);
+            this.displayCaloriesFromFats.Size = new System.Drawing.Size(0, 13);
             this.displayCaloriesFromFats.TabIndex = 4;
-            this.displayCaloriesFromFats.Text = "label1";
             // 
             // displayCaloriesFromCarbs
             // 
             this.displayCaloriesFromCarbs.AutoSize = true;
             this.displayCaloriesFromCarbs.Location = new System.Drawing.Point(6, 38);
             this.displayCaloriesFromCarbs.Name = "displayCaloriesFromCarbs";
-            this.displayCaloriesFromCarbs.Size = new System.Drawing.Size(35, 13);
+            this.displayCaloriesFromCarbs.Size = new System.Drawing.Size(0, 13);
             this.displayCaloriesFromCarbs.TabIndex = 5;
-            this.displayCaloriesFromCarbs.Text = "label1";
             // 
             // displayTotalCalories
             // 
             this.displayTotalCalories.AutoSize = true;
             this.displayTotalCalories.Location = new System.Drawing.Point(6, 74);
             this.displayTotalCalories.Name = "displayTotalCalories";
-            this.displayTotalCalories.Size = new System.Drawing.Size(35, 13);
+            this.displayTotalCalories.Size = new System.Drawing.Size(0, 13);
             this.displayTotalCalories.TabIndex = 6;
-            this.displayTotalCalories.Text = "label1";
             // 
             // groupBox1
             // 
@@ -164,6 +161,7 @@
             // 
             // exitButton
             // 
+            this.exitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.exitButton.Location = new System.Drawing.Point(420, 365);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 23);
@@ -172,10 +170,12 @@
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
-            // Form1
+            // fatsCarbsConverterForm
             // 
+            this.AcceptButton = this.totalButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.exitButton;
             this.ClientSize = new System.Drawing.Size(682, 450);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.clearButton);
@@ -188,8 +188,8 @@
             this.Controls.Add(this.gramsOfFatLabel);
             this.Controls.Add(this.gramsCarbsTextBox);
             this.Controls.Add(this.fatGramsTextBox);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "fatsCarbsConverterForm";
+            this.Text = "Carbs/Fats Converter";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
