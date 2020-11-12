@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * author: Dustin Johnson
+ */
+
 namespace CalorieCounterConverter
 {
     public partial class fatsCarbsConverterForm : Form
